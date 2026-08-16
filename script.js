@@ -112,3 +112,41 @@ musicLabel(audio && !audio.paused);
  setInterval(()=>{updateLoad();updateVisitor()},1000);
  window.addEventListener('load',()=>setTimeout(updateLoad,500));
 })();
+
+// Protected contact details: reveal only after an explicit visitor click.
+(function(){
+ const emailProtect=document.getElementById('emailProtect');
+ const emailEl=document.getElementById('protectedEmail');
+ const whatsappProtect=document.getElementById('whatsappProtect');
+ const whatsappEl=document.getElementById('protectedWhatsapp');
+ const mailButton=document.getElementById('contactEmailButton');
+ const user='kedaijasa.tech';
+ const domain='gmail.com';
+ const wa='6281291073598';
+ const waDisplay='081291073598';
+
+ function revealEmail(scroll=false){
+   if(!emailEl||!emailProtect)return;
+   const email=user+'@'+domain;
+   emailEl.hidden=false;
+   emailEl.innerHTML='<a href="mailto:'+email+'">'+email+'</a>';
+   emailProtect.setAttribute('aria-expanded','true');
+   emailProtect.remove();
+   if(scroll) document.getElementById('email-protected')?.scrollIntoView({behavior:'smooth',block:'center'});
+ }
+ function revealWhatsapp(scroll=false){
+   if(!whatsappEl||!whatsappProtect)return;
+   whatsappEl.hidden=false;
+   whatsappEl.innerHTML='<a href="https://wa.me/'+wa+'" target="_blank" rel="noopener noreferrer">'+waDisplay+' ↗</a>';
+   whatsappProtect.setAttribute('aria-expanded','true');
+   whatsappProtect.remove();
+   if(scroll) document.getElementById('protectedWhatsapp')?.scrollIntoView({behavior:'smooth',block:'center'});
+ }
+ emailProtect?.addEventListener('click',()=>revealEmail());
+ whatsappProtect?.addEventListener('click',()=>revealWhatsapp());
+ mailButton?.addEventListener('click',e=>{
+   e.preventDefault();
+   revealEmail(true);
+   setTimeout(()=>document.querySelector('#protectedEmail a')?.click(),180);
+ });
+})();
