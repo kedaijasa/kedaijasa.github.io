@@ -225,6 +225,7 @@ button{font:inherit}
 .faq{background:#fff}.faq-list{border-top:1px solid #aaa}.faq-list details{border-bottom:1px solid #aaa}.faq-list summary{cursor:pointer;list-style:none;padding:27px 0;font:700 clamp(18px,2.4vw,34px) var(--display);letter-spacing:-.04em}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary:after{content:"+";float:right;color:var(--red);font:30px var(--mono)}.faq-list details[open] summary:after{content:"−"}.faq-list p{font:11px/1.8 var(--mono);max-width:760px;color:#555;padding:0 0 30px;margin:0}
 .big-text-logo{font:800 clamp(50px,7vw,105px)/.78 var(--display);letter-spacing:-.09em;text-align:left}.big-text-logo span{color:var(--red)}
 .contact-box{border-top:1px solid #999;margin-top:30px;padding-top:20px;text-align:left;font:10px/1.6 var(--mono)}
+.email-protect{appearance:none;background:none;border:0;border-bottom:1px dashed #555;padding:0;color:inherit;font:inherit;cursor:pointer;text-align:left;letter-spacing:inherit}.email-protect:hover{color:var(--red);border-bottom-color:var(--red)}.protected-email a{color:inherit;text-decoration:none;border-bottom:1px solid #555}.protected-email a:hover{color:var(--red);border-bottom-color:var(--red)}
 @media(max-width:900px){
  .text-logo{font-size:17px}.hero-brand{gap:15px}.hero-wordmark{font-size:28px}
  .service-card{grid-template-columns:35px 1fr 25px;gap:15px}.process-grid,.tech-grid{grid-template-columns:1fr 1fr}.process-grid article:nth-child(3n),.process-grid article:nth-child(3n+2),.tech-grid div:nth-child(3n),.tech-grid div:nth-child(3n+2){padding-left:0}.process-grid article:nth-child(odd),.tech-grid div:nth-child(odd){padding-right:18px}.process-grid article:nth-child(even),.tech-grid div:nth-child(even){padding-left:18px}.process-grid article:nth-child(3n),.tech-grid div:nth-child(3n){border-right:1px solid #444}.process-grid article:nth-child(2n),.tech-grid div:nth-child(2n){border-right:0}
@@ -1176,3 +1177,12 @@ img, video, svg, canvas, iframe {
  .visitor-meta{width:100%;text-align:left}
  .visitor-load{order:2}
 }
+
+/* Protected contact CTAs */
+.contact-protect{display:inline-block;margin-top:8px;padding:0;border:0;background:none;color:inherit;font:700 9px var(--mono);letter-spacing:.04em;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;cursor:pointer;transition:color .2s,transform .2s}
+.contact-protect:hover,.contact-protect:focus-visible{color:var(--red);transform:translateX(3px);outline:none}
+.protected-contact{display:inline-block;margin-top:8px;font:inherit}
+.protected-contact a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.protected-contact a:hover{color:var(--red)}
+/* Protected contact CTA: completely remove the reveal prompt after activation. */
+.contact-protect[hidden]{display:none !important;visibility:hidden !important;width:0 !important;height:0 !important;margin:0 !important;padding:0 !important;border:0 !important;overflow:hidden !important;}
