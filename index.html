@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile-nav.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 </head>
 <body>
   <div class="grain"></div>
@@ -25,7 +27,7 @@
 
   <!-- Musik latar dari Internet. Autoplay akan menunggu interaksi pertama karena kebijakan browser. -->
   <audio id="bgAudio" autoplay loop preload="auto" playsinline>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    <source src="https://c4.siar.us:10340/stream.mp3" type="audio/mpeg">
   </audio>
 
   <header class="header" id="siteHeader">
@@ -263,18 +265,28 @@
           <p>Punya ide website? Bisnis baru? Website lama ingin dibenahi? Atau butuh partner teknologi?</p>
           <h2>BUAT<br>SESUATU<br><i>YANG BERARTI.</i></h2>
           <p>Ceritakan kebutuhan Anda. Kami akan membantu menerjemahkan ide menjadi solusi digital yang jelas dan bisa digunakan.</p>
-          <a class="end-button" href="mailto:kedaijasa.tech@gmail.com
-">KIRIM PESAN ↗</a>
+          <a class="end-button" id="contactEmailButton" href="#email-protected">KIRIM PESAN ↗</a>
         </div>
         <div class="end-mark">
           <div class="big-text-logo">Kedaijasa<br>Teknologi<span>.</span></div>
           <span>SOLUSI DIGITAL UNTUK BISNIS INDONESIA.</span>
           <div class="contact-box">
-            <b>EMAIL</b><br>kedaijasa.tech@gmail.com
+            <b>ALAMAT :</b><br><br>
+            <strong>Jakarta:</strong><br>
+            Jl. Pulo Besar 2, Sunter Jaya<br>
+            Tanjung Priok, Jakarta Utara - 14360
 <br><br>
-            <b>WHATSAPP</b><br><a href="https://wa.me/6281291073598" target="_blank" rel="noopener">081291073598</a>
+            <strong>Padang:</strong><br>
+            Jl. Coklat No.7 Ulu Gadut<br>
+            Padang, Sumatra Barat - 25157
 <br><br>
-            <b>ALAMAT</b><br>Gadut, RT.05/02 no.07 Limau Manis Selatan - Padang
+            <b>EMAIL</b><br>
+            <button type="button" class="contact-protect" id="emailProtect" aria-controls="protectedEmail" aria-expanded="false">KLIK UNTUK MENAMPILKAN EMAIL</button>
+            <span id="protectedEmail" class="protected-contact" hidden></span>
+            <br><br>
+            <b>WHATSAPP</b><br>
+            <button type="button" class="contact-protect" id="whatsappProtect" aria-controls="protectedWhatsapp" aria-expanded="false">KLIK UNTUK MENAMPILKAN WHATSAPP</button>
+            <span id="protectedWhatsapp" class="protected-contact" hidden></span>
           </div>
         </div>
       </div>
@@ -282,7 +294,7 @@
         <span>© <span id="year"></span> Kedaijasa Teknologi | Still sucks, but still rocks! <span class="rock-icon" aria-label="rock">🤘</span> from Pinggiran Desa Kecil - Padang</span>
         <button id="musicToggle"><span class="bars"><i></i><i></i><i></i><i></i></span> MUSIK ON</button>
         <span id="loadSize" class="visitor-load" aria-live="polite">LOAD -- KB</span>
-        <span class="visitor-meta"><span>INDONESIA / DIGITAL PARTNER</span><span id="visitorInfo" aria-live="polite">LOKASI -- · --/--/---- · --:--:--</span></span>
+        <span class="visitor-meta"><span>WBDZGN by ./rzl</span><span id="visitorInfo" aria-live="polite">LOKASI -- · --/--/---- · --:--:--</span></span>
       </div>
     </section>
   </main>
