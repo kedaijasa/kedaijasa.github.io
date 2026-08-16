@@ -1,60 +1,291 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="id">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kedaijasa Teknologi :: Coming Soon</title>
-  <link rel="icon" href="https://blog.stackfindover.com/wp-content/uploads/2020/06/favicon.png" sizes="32x32" />
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="custom.js"></script> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1ea">
+  <meta name="description" content="Kedaijasa Teknologi — solusi digital, website, UI/UX, hosting, cloud, pemasaran digital dan keamanan untuk bisnis Indonesia.">
+  <title>Jasa Pembuatan Website Terbaik dan Profesional - Kedaijasa Teknologi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile-nav.css">
 </head>
 <body>
-  <span class="bar"><i class="fa fa-bars"></i></span>
-  <nav class="toggle-nav">
-    <ul class="listing">
-      <li>
-        <a href="https://web.facebook.com/kedaijasa.tech">
-          <i class="fa fa-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.twitter.com/">
-          <i class="fa fa-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/kedaijasa/">
-          <i class="fa fa-instagram"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@digitalagencyjakarta9416">
-          <i class="fa fa-youtube"></i>
-        </a>
-      </li>
-      <li>
-        <a href="mailto:kedaijasa.tech@gmail.com">
-          <i class="fa fa-envelope"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <section class="coming-soon">
-    <div class="coming-soon-inner">
-      <h1 class="heading">Kedaijasa</h1>
-      <h2 class="small-heading">coming <strike>crot</strike></h2>
-      <div class="counter-timer">
-        <ul>
-            <li><span id="days"></span>Hari</li>
-            <li><span id="hours"></span>Jam</li>
-            <li><span id="minutes"></span>Menit</li>
-            <li><span id="seconds"></span>Detik</li>
-          </ul>
-        </div>
+  <div class="grain"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-hand" aria-hidden="true">↗</div>
+  <!-- Mobile/desktop floating overlay navigation: kembali ke atas -->
+  <button id="kjBackTop" type="button" aria-label="Kembali ke atas">
+    <span class="kj-backtop-arrow" aria-hidden="true"><i></i></span>
+    <span class="kj-backtop-label">TOP</span>
+  </button>
+
+  <!-- Musik latar dari Internet. Autoplay akan menunggu interaksi pertama karena kebijakan browser. -->
+  <audio id="bgAudio" autoplay loop preload="auto" playsinline>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <header class="header" id="siteHeader">
+    <a class="text-logo" href="#home" aria-label="Kedaijasa Teknologi">Kedaijasa Teknologi<span>.</span></a>
+    <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Buka menu">
+      <span class="menu-icon"><i></i><i></i><i></i></span>
+      <span class="menu-label">MENU</span>
+    </button>
+  </header>
+
+  <nav class="menu" id="siteMenu" aria-hidden="true">
+    <div class="menu-inner">
+      <div class="menu-top"><span>Kedaijasa Teknologi / NAVIGASI</span><button id="menuClose">TUTUP ×</button></div>
+      <a href="#home">BERANDA</a>
+      <a href="#tentang">TENTANG KAMI</a>
+      <a href="#layanan">LAYANAN</a>
+      <a href="#proses">PROSES KERJA</a>
+      <a href="#teknologi">TEKNOLOGI</a>
+      <a href="#faq">PERTANYAAN</a>
+      <a href="#kontak">KONTAK</a>
+      <div class="menu-bottom"><span>INDONESIA</span><span>2026</span></div>
     </div>
-  </section>
+  </nav>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-top"><span>SOLUSI DIGITAL</span><span>Kedaijasa TEKNOLOGI</span><span>INDONESIA / 2026</span></div>
+
+      <div class="hero-brand">
+        <div class="hero-wordmark">Kedaijasa Teknologi<span>.</span></div>
+        <div class="hero-brand-copy">
+          <span>Website • Cloud • Digital</span>
+          <span>Teknologi untuk pertumbuhan bisnis</span>
+        </div>
+      </div>
+
+      <div class="hero-title-wrap">
+        <p class="tiny">Kedaijasa / DIGITAL PARTNER / 001</p>
+        <h1>
+          <span>JASA BUAT</span>
+          <span class="offset">WEBSITE TERBAIK</span>
+          <span>INDONESIA<span class="red">.</span></span>
+        </h1>
+      </div>
+
+      <div class="hero-note">
+        <span class="bracket">[</span>
+        <p>Kami membantu bisnis, organisasi dan personal membangun kehadiran digital yang cepat, profesional, mudah dikelola dan punya karakter.</p>
+        <span class="bracket">]</span>
+      </div>
+
+      <div class="hero-corner hero-corner-left">GULIR<br><b>↓</b></div>
+      <div class="hero-corner hero-corner-right">WEBSITE<br>HOSTING<br>MARKETING<br>SECURITY</div>
+      <div class="hero-shape shape-one"></div>
+      <div class="hero-shape shape-two"></div>
+      <div class="hero-shape shape-three">KJ</div>
+
+      <div class="hero-footer">
+        <span>SELAMAT DATANG</span><span>● ● ●</span><span>TEKNOLOGI TANPA RIBET</span>
+      </div>
+    </section>
+
+    <section class="intro section" id="tentang">
+      <div class="section-label"><span>01 / TENTANG Kedaijasa</span><span>SIAPA KAMI?</span></div>
+      <div class="intro-grid">
+        <div class="intro-title">
+          <p class="mono">SEBUAH CATATAN:</p>
+          <h2>BUKAN SEKADAR<br><em>WEBSITE.</em></h2>
+        </div>
+        <div class="intro-copy">
+          <p><strong>Kedaijasa Teknologi</strong> adalah penyedia solusi digital yang membantu bisnis dan organisasi membangun, mengelola dan mengembangkan aset digital mereka.</p>
+          <p>Kami menggabungkan desain, pengembangan web, hosting, cloud, keamanan dan pemasaran digital dalam satu ekosistem yang lebih sederhana.</p>
+          <p>Tujuannya sederhana: teknologi harus membantu pekerjaan menjadi lebih mudah dan bisnis terlihat lebih profesional.</p>
+        </div>
+      </div>
+      <div class="scribble">IDE → DESAIN → KODE → ONLINE → TUMBUH</div>
+    </section>
+
+    <section class="trend-section brutal section">
+      <div class="trend-head"><span>02 / FILOSOFI KERJA</span><span>01</span></div>
+      <div class="trend-layout">
+        <div class="trend-number">01</div>
+        <div class="trend-content">
+          <h2>TEKNOLOGI<br><i>YANG</i><br>BERGUNA<span class="red">.</span></h2>
+          <p class="trend-lead">Tidak rumit. Tidak berlebihan. Harus ada gunanya.</p>
+          <p>Kami tidak mengejar teknologi hanya karena sedang tren. Setiap fitur harus mempunyai alasan: mempercepat pekerjaan, meningkatkan kepercayaan pelanggan, mengurangi pekerjaan manual atau membuka peluang baru.</p>
+        </div>
+        <div class="trend-art brutal-art"><div class="art-circle"></div><div class="art-cross">×</div><strong>USE<br>FUL</strong><small>FUNGSI / 001</small></div>
+      </div>
+      <div class="trend-links"><span>STRATEGI</span><span>DESAIN</span><span>TEKNOLOGI</span><span>HASIL</span></div>
+    </section>
+
+    <section class="detail-section section" id="layanan">
+      <div class="detail-heading">
+        <div class="section-label"><span>03 / LAYANAN</span><span>APA YANG KAMI KERJAKAN?</span></div>
+        <h2>SEMUA YANG<br>DIBUTUHKAN<br><i>SECARA DIGITAL.</i></h2>
+      </div>
+
+      <div class="service-list">
+        <article class="service-card"><span>01</span><div><h3>PEMBUATAN WEBSITE</h3><p>Website company profile, landing page, toko online, portal, katalog, blog dan website custom dengan tampilan modern, responsif dan mudah dikembangkan.</p><div class="tags">UI/UX · RESPONSIVE · SEO · CMS · CUSTOM</div></div><b>↗</b></article>
+        <article class="service-card"><span>02</span><div><h3>HOSTING & DOMAIN</h3><p>Infrastruktur hosting untuk website dan aplikasi dengan konfigurasi sesuai kebutuhan, termasuk bantuan deployment, SSL, backup dan pengelolaan domain.</p><div class="tags">HOSTING · DOMAIN · SSL · BACKUP</div></div><b>↗</b></article>
+        <article class="service-card"><span>03</span><div><h3>CLOUD & SERVER</h3><p>Solusi server dan cloud untuk aplikasi, database, sistem internal, layanan online dan kebutuhan bisnis yang memerlukan kontrol lebih besar.</p><div class="tags">VPS · CLOUD · SERVER · DATABASE</div></div><b>↗</b></article>
+        <article class="service-card"><span>04</span><div><h3>INTERNET & HOTSPOT</h3><p>Solusi jaringan untuk koneksi internet dan hotspot yang stabil, aman dan mudah dikelola, termasuk konfigurasi router, Wi-Fi, pembagian bandwidth, captive portal serta monitoring jaringan.</p><div class="tags">NETWORK · WI-FI · HOTSPOT · ROUTER · BANDWIDTH</div></div><b>↗</b></article>
+        <article class="service-card"><span>05</span><div><h3>PEMASARAN DIGITAL</h3><p>Membantu bisnis membangun visibilitas online melalui konten, media sosial, optimasi mesin pencari dan strategi komunikasi digital.</p><div class="tags">SEO · SOSMED · KONTEN · BRANDING</div></div><b>↗</b></article>
+        <article class="service-card"><span>06</span><div><h3>KEAMANAN & MONITORING</h3><p>Pemantauan dasar, pengamanan website, SSL, backup dan pemeriksaan konfigurasi untuk membantu menjaga layanan tetap tersedia.</p><div class="tags">SECURITY · MONITORING · BACKUP</div></div><b>↗</b></article>
+        <article class="service-card"><span>07</span><div><h3>PERAWATAN WEBSITE</h3><p>Pembaruan konten, perbaikan tampilan, optimasi, pengecekan error dan pengembangan fitur agar website tidak berhenti setelah diluncurkan.</p><div class="tags">MAINTENANCE · OPTIMASI · UPDATE</div></div><b>↗</b></article>
+        <article class="service-card"><span>08</span><div><h3>UI & UX DESIGN</h3><p>Perancangan antarmuka dan pengalaman pengguna yang intuitif, konsisten dan berorientasi pada kebutuhan pengguna, mulai dari struktur informasi, wireframe, prototipe hingga desain visual siap dikembangkan.</p><div class="tags">UI DESIGN · UX DESIGN · WIREFRAME · PROTOTYPE · DESIGN SYSTEM</div></div><b>↗</b></article>
+      </div>
+    </section>
+
+    <section class="trend-section bold section">
+      <div class="trend-head"><span>04 / CARA KAMI BERPIKIR</span><span>02</span></div>
+      <div class="trend-layout">
+        <div class="trend-number">02</div>
+        <div class="trend-content">
+          <h2>DESAIN<br>YANG<br><i>BERANI.</i></h2>
+          <p class="trend-lead">Bukan sekadar bagus. Harus mudah diingat.</p>
+          <p>Identitas digital adalah titik pertama pelanggan mengenal sebuah bisnis. Karena itu kami memperhatikan hierarki informasi, tipografi, warna, ruang, interaksi dan kecepatan agar tampilan menarik sekaligus tetap mudah digunakan.</p>
+        </div>
+        <div class="trend-art bold-art"><span>DESAIN DIGITAL</span><strong>WOW!</strong><i>↗</i></div>
+      </div>
+    </section>
+
+    <section class="detail-section process section" id="proses">
+      <div class="detail-heading">
+        <div class="section-label"><span>05 / PROSES KERJA</span><span>DARI IDE SAMPAI ONLINE</span></div>
+        <h2>KERJA<br>TERSTRUKTUR.<br><i>HASIL TERUKUR.</i></h2>
+      </div>
+      <div class="process-grid">
+        <article><span>01</span><h3>KENALI</h3><p>Kami memahami bisnis, target pelanggan, kebutuhan dan masalah yang ingin diselesaikan.</p></article>
+        <article><span>02</span><h3>RANCANG</h3><p>Struktur halaman, alur pengguna, konten dan arah visual disusun sebelum pengembangan.</p></article>
+        <article><span>03</span><h3>BANGUN</h3><p>Desain diterjemahkan menjadi website atau sistem yang responsif, cepat dan siap digunakan.</p></article>
+        <article><span>04</span><h3>UJI</h3><p>Fungsi, tampilan, responsivitas dan konfigurasi dasar diperiksa sebelum peluncuran.</p></article>
+        <article><span>05</span><h3>LAUNCH</h3><p>Website dipublikasikan ke hosting/server dan dipersiapkan untuk ditemukan pelanggan.</p></article>
+        <article><span>06</span><h3>KEMBANGKAN</h3><p>Setelah online, fitur dan konten dapat terus dikembangkan sesuai kebutuhan bisnis.</p></article>
+      </div>
+    </section>
+
+    <section class="trend-section pixels section">
+      <div class="trend-head"><span>06 / DIGITAL STYLE</span><span>03</span></div>
+      <div class="trend-layout">
+        <div class="trend-number">03</div>
+        <div class="trend-content">
+          <h2>CEPAT<br><i>RESPONSIF</i><br>ADAPTIF</h2>
+          <p class="trend-lead">Website harus bekerja di layar yang berbeda.</p>
+          <p>Pengguna bisa datang dari ponsel, tablet, laptop atau monitor besar. Kami merancang layout responsif agar informasi tetap nyaman dibaca dan fungsi utama tetap mudah ditemukan.</p>
+        </div>
+        <div class="trend-art pixel-art"><div class="pixel-grid"></div><div class="pixel-face">OK</div><small>HP / TABLET / LAPTOP / DESKTOP</small></div>
+      </div>
+    </section>
+
+    <section class="detail-section feature section" id="teknologi">
+      <div class="detail-heading">
+        <div class="section-label"><span>07 / TEKNOLOGI</span><span>PERALATAN KERJA</span></div>
+        <h2>MODERN<br>TAPI TETAP<br><i>PRAKTIS.</i></h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-category"><span>01 / FRONTEND CORE</span></div>
+        <div><div class="tech-logos"><i class="devicon-html5-plain colored" title="HTML5"></i><i class="devicon-css3-plain colored" title="CSS3"></i></div><b>HTML / CSS</b><span>Struktur, styling dan layout antarmuka web responsif.</span></div>
+        <div><div class="tech-logos"><i class="devicon-javascript-plain colored" title="JavaScript"></i><i class="devicon-typescript-plain colored" title="TypeScript"></i></div><b>JS / TS</b><span>Interaksi web modern, komponen dan aplikasi terstruktur.</span></div>
+        <div><div class="tech-logos"><i class="devicon-react-original colored" title="React"></i><i class="devicon-nextjs-plain colored" title="Next.js"></i><i class="devicon-vuejs-plain colored" title="Vue.js"></i></div><b>REACT / NEXT / VUE</b><span>Framework dan library untuk aplikasi web modern.</span></div>
+
+        <div class="tech-category"><span>02 / GRAPHICS & MOTION</span></div>
+        <div><div class="tech-logos"><span class="tech-badge tech-badge-svg">SVG</span><span class="tech-badge tech-badge-canvas">CANVAS</span></div><b>SVG / CANVAS</b><span>Grafis vektor dan visual interaktif berbasis browser.</span></div>
+        <div><div class="tech-logos"><span class="tech-badge tech-badge-gsap">GSAP</span><span class="tech-badge tech-badge-pixi">PIXI</span></div><b>GSAP / PIXI</b><span>Animasi web dan rendering grafis 2D yang halus.</span></div>
+        <div><div class="tech-logos"><i class="devicon-threejs-original colored" title="Three.js"></i><span class="tech-badge tech-badge-webgl">WebGL</span></div><b>THREE.JS / WEBGL</b><span>3D dan pengalaman visual interaktif di browser.</span></div>
+
+        <div class="tech-category"><span>03 / DEVELOPMENT TOOLS</span></div>
+        <div><div class="tech-logos"><i class="devicon-git-plain colored" title="Git"></i><i class="devicon-github-original colored" title="GitHub"></i></div><b>GIT / GITHUB</b><span>Version control, repository dan kolaborasi pengembangan.</span></div>
+        <div><div class="tech-logos"><i class="devicon-webpack-plain colored" title="Webpack"></i><i class="devicon-vitejs-plain colored" title="Vite"></i></div><b>WEBPACK / VITE</b><span>Build tools untuk workflow development yang cepat.</span></div>
+        <div><div class="tech-logos"><i class="devicon-python-plain colored" title="Python"></i></div><b>PYTHON</b><span>Automasi, scripting dan kebutuhan backend tertentu.</span></div>
+
+        <div class="tech-category"><span>04 / BACKEND & DATABASE</span></div>
+        <div><div class="tech-logos"><i class="devicon-php-plain colored" title="PHP"></i><i class="devicon-mysql-plain colored" title="MySQL"></i></div><b>PHP / MYSQL</b><span>Backend dan database untuk aplikasi web dinamis.</span></div>
+        <div><div class="tech-logos"><i class="devicon-wordpress-plain colored" title="WordPress"></i></div><b>WORDPRESS</b><span>CMS untuk pengelolaan konten dan website bisnis.</span></div>
+        <div><div class="tech-logos"><i class="devicon-linux-plain colored" title="Linux"></i><span class="tech-badge" title="VPS">VPS</span></div><b>LINUX / VPS</b><span>Server, hosting dan deployment layanan digital.</span></div>
+
+        <div class="tech-category"><span>05 / SYSTEMS</span></div>
+        <div><div class="tech-logos"><i class="devicon-debian-plain colored" title="Debian"></i><i class="devicon-ubuntu-plain colored" title="Ubuntu"></i></div><b>DEBIAN / UBUNTU</b><span>Distribusi Linux untuk server, development dan deployment.</span></div>
+        <div><div class="tech-logos"><i class="devicon-redhat-plain colored" title="Red Hat"></i></div><b>RED HAT</b><span>Platform Linux enterprise untuk kebutuhan server.</span></div>
+        <div><div class="tech-logos"><span class="tech-badge tech-badge-seo" title="SEO">SEO</span><span class="tech-badge tech-badge-analytics" title="Analytics">A</span></div><b>SEO / ANALYTICS</b><span>Optimasi, pengukuran dan evaluasi performa digital.</span></div>
+
+        <div class="tech-category"><span>06 / UI UX & CREATIVE</span></div>
+        <div><div class="tech-logos"><i class="devicon-figma-plain colored" title="Figma"></i><span class="tech-badge tech-badge-figjam" title="FigJam">FJ</span></div><b>FIGMA / FIGJAM</b><span>UI design, wireframe, prototyping dan kolaborasi UX.</span></div>
+        <div><div class="tech-logos"><span class="tech-badge tech-badge-adobe">Ps</span><span class="tech-badge tech-badge-adobe ai">Ai</span><span class="tech-badge tech-badge-adobe pr">Pr</span></div><b>ADOBE FAMILY</b><span>Photoshop, Illustrator, Premiere dan tools kreatif Adobe.</span></div>
+        <div><div class="tech-logos"><i class="devicon-blender-original colored" title="Blender"></i></div><b>BLENDER</b><span>Modeling, 3D visual dan aset kreatif untuk pengalaman digital.</span></div>
+      </div>
+    </section>
+
+    <section class="trend-section abstract section">
+      <div class="trend-head"><span>08 / VISI</span><span>04</span></div>
+      <div class="trend-layout">
+        <div class="trend-number">04</div>
+        <div class="trend-content">
+          <h2>BISNIS<br><i>LOKAL.</i><br>JANGKAUAN<br>GLOBAL.</h2>
+          <p class="trend-lead">Internet membuat jarak menjadi lebih kecil.</p>
+          <p>Kami percaya bisnis dari kota mana pun di Indonesia bisa mempunyai wajah digital yang profesional dan melayani pelanggan tanpa batas lokasi.</p>
+        </div>
+        <div class="trend-art abstract-art"><div class="blob blob-a"></div><div class="blob blob-b"></div><div class="blob blob-c"></div><span>LOCAL → ONLINE → GROW</span></div>
+      </div>
+    </section>
+
+    <section class="detail-section faq section" id="faq">
+      <div class="detail-heading">
+        <div class="section-label"><span>09 / PERTANYAAN UMUM</span><span>FAQ</span></div>
+        <h2>MASIH<br>BINGUNG?<br><i>BACA INI.</i></h2>
+      </div>
+      <div class="faq-list">
+        <details><summary>Apakah Kedaijasa hanya membuat website?</summary><p>Tidak. Website adalah salah satu layanan utama. Kami juga menyediakan hosting, domain, server/cloud, pemasaran digital, keamanan dasar dan maintenance.</p></details>
+        <details><summary>Apakah website bisa disesuaikan dengan brand saya?</summary><p>Bisa. Struktur, warna, tipografi, konten dan fitur dapat disesuaikan dengan karakter dan kebutuhan bisnis.</p></details>
+        <details><summary>Apakah website bisa dibuka dari HP?</summary><p>Ya. Website dirancang responsif sehingga layout menyesuaikan berbagai ukuran layar.</p></details>
+        <details><summary>Apakah bisa membantu domain dan hosting?</summary><p>Bisa. Kami dapat membantu memilih konfigurasi, mengatur domain, hosting, SSL, deployment dan kebutuhan teknis terkait.</p></details>
+        <details><summary>Apakah setelah website jadi masih bisa diperbarui?</summary><p>Bisa. Website dapat dikelola dan dikembangkan setelah peluncuran, baik untuk perubahan konten maupun penambahan fitur.</p></details>
+        <details><summary>Bagaimana cara mulai?</summary><p>Kirim kebutuhan Anda. Ceritakan bisnis, tujuan website, contoh referensi dan fitur yang diinginkan. Dari sana kami dapat menyusun arah pekerjaan.</p></details>
+      </div>
+    </section>
+
+    <section class="services-strip section">
+      <div class="strip-title">Kedaijasa TEKNOLOGI / LAYANAN DIGITAL</div>
+      <div class="strip-items">
+        <a href="#kontak">WEBSITE <span>↗</span></a>
+        <a href="#kontak">HOSTING & DOMAIN <span>↗</span></a>
+        <a href="#kontak">CLOUD & SERVER <span>↗</span></a>
+        <a href="#kontak">INTERNET & HOTSPOT <span>↗</span></a>
+        <a href="#kontak">PEMASARAN DIGITAL <span>↗</span></a>
+        <a href="#kontak">KEAMANAN & MAINTENANCE <span>↗</span></a>
+        <a href="#kontak">UI & UX DESIGN <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="end section" id="kontak">
+      <div class="end-top">10 / KONTAK — SEKARANG SAATNYA MULAI</div>
+      <div class="end-main">
+        <div class="end-copy">
+          <p>Punya ide website? Bisnis baru? Website lama ingin dibenahi? Atau butuh partner teknologi?</p>
+          <h2>BUAT<br>SESUATU<br><i>YANG BERARTI.</i></h2>
+          <p>Ceritakan kebutuhan Anda. Kami akan membantu menerjemahkan ide menjadi solusi digital yang jelas dan bisa digunakan.</p>
+          <a class="end-button" href="mailto:kedaijasa.tech@gmail.com
+">KIRIM PESAN ↗</a>
+        </div>
+        <div class="end-mark">
+          <div class="big-text-logo">Kedaijasa<br>Teknologi<span>.</span></div>
+          <span>SOLUSI DIGITAL UNTUK BISNIS INDONESIA.</span>
+          <div class="contact-box">
+            <b>EMAIL</b><br>kedaijasa.tech@gmail.com
+<br><br>
+            <b>WHATSAPP</b><br><a href="https://wa.me/6281291073598" target="_blank" rel="noopener">081291073598</a>
+<br><br>
+            <b>ALAMAT</b><br>Gadut, RT.05/02 no.07 Limau Manis Selatan - Padang
+          </div>
+        </div>
+      </div>
+      <div class="end-bottom">
+        <span>© <span id="year"></span> Kedaijasa Teknologi | Still sucks, but still rocks! <span class="rock-icon" aria-label="rock">🤘</span> from Pinggiran Desa Kecil - Padang</span>
+        <button id="musicToggle"><span class="bars"><i></i><i></i><i></i><i></i></span> MUSIK ON</button>
+        <span id="loadSize" class="visitor-load" aria-live="polite">LOAD -- KB</span>
+        <span class="visitor-meta"><span>INDONESIA / DIGITAL PARTNER</span><span id="visitorInfo" aria-live="polite">LOKASI -- · --/--/---- · --:--:--</span></span>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
